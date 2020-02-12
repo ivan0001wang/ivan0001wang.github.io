@@ -1,0 +1,33 @@
+/* Import fonts from folder Components/fonts/ */
+@font-face {
+    font-family: Playfair-Bold;
+    src: url("Components/fonts/PlayfairDisplay-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Playfair-BoldItalic;
+    src: url("Components/fonts/PlayfairDisplay-BoldItalic.otf.otf") format("opentype");
+}
+@font-face {
+    font-family: Playfair-Italic;
+    src: url("Components/fonts/PlayfairDisplay-Italic.otf.otf") format("opentype");
+}
+@font-face {
+    font-family: Playfair-Regular;
+    src: url("Components/fonts/PlayfairDisplay-Regular.otf.") format("opentype");
+}
+@font-face {
+    font-family: Ralewat-Light;
+    src: url("Components/fonts/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: Ralewat-LightItalic;
+    src: url("Components/fonts/Raleway-LightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: Ralewat-Medium;
+    src: url("Components/fonts/Raleway-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: Ralewat-MediumItalic;
+    src: url("Components/fonts/Raleway-MediumItalic.ttf") format("truetype");
+}
