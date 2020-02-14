@@ -16,18 +16,18 @@
     src: url("Components/fonts/PlayfairDisplay-Regular.otf.") format("opentype");
 }
 @font-face {
-    font-family: Ralewat-Light;
+    font-family: Raleway-Light;
     src: url("Components/fonts/Raleway-Light.ttf") format("truetype");
 }
 @font-face {
-    font-family: Ralewat-LightItalic;
+    font-family: Raleway-LightItalic;
     src: url("Components/fonts/Raleway-LightItalic.ttf") format("truetype");
 }
 @font-face {
-    font-family: Ralewat-Medium;
+    font-family: Raleway-Medium;
     src: url("Components/fonts/Raleway-Medium.ttf") format("truetype");
 }
 @font-face {
-    font-family: Ralewat-MediumItalic;
+    font-family: Raleway-MediumItalic;
     src: url("Components/fonts/Raleway-MediumItalic.ttf") format("truetype");
 }

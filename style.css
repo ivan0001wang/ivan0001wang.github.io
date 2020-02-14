@@ -1,9 +1,18 @@
+/* .test1{
+    font-family: Raleway-light;
+}
+
+.test2{
+    font-family: Raleway-MediumItalic
+} */
+
 .body{
     margin: none;
     color: #2d2d2d;
-
+    font-family: Raleway-Medium;
 }
 
+/* Start of Head */
 .head{
     display:grid;
     justify-content: space-between;
@@ -23,7 +32,7 @@
     grid-column: 2;
     width: 4.5em;
     align-self: center;
-    margin-right: -2em;
+    margin-right: -1em;
         /* Testing */
         /* border: 2px black solid; */
 }
@@ -42,15 +51,77 @@
     grid-row: 3;
     grid-column: 1/3;
     width: 100%;
+    margin-top: 0.5em;
     justify-content: space-evenly;
         /* Testing */
         /* border: 2px black solid; */
 }
 
 .head .manu a{
-    font-size: 1.2em;
+    font-size: 1em;
     text-decoration: none;
+    font-family: Raleway-Light;
+}
+/* End of Head */
+/*  */
+/*  */
+/* Start of Hero Section */
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 25em;
+    margin-top: 1em;
+    padding: 0;
+    overflow: hidden;
+    /* border: 4px green dotted; */
+}
 
+.hero-background{
+    position: absolute;
+    filter: brightness(0.7);
+    width: 100%;
+    height: 25em;
+}
+
+.hero-girl{
+    position: relative;
+    filter: brightness(0.7);
+    height: 20em;
+    z-index: 1;
+    margin: 5em auto 0;
+    /* border: blueviolet 3px dotted; */
+}
+
+.hero h1, .hero h2{
+    position: absolute;
+    color:white;
+    z-index: 2;
+}
+
+.hero h1{
+    font-family: Raleway-Light;
+    font-size: 1.2em;
+    margin-top: 7em;
+    text-align: center;
+    /* border: 3px dotted black; */
+}
+
+.hero h2{
+    text-align: center;
+    font-family: Playfair-Regular;
+    font-size: 2.2em;
+    margin-top: 5.5em;
+    /* border: 3px dotted black; */
+}
+/* 
+End of HERO section
+
+
+Start of Intro Section
+*/ 
+.intro{
+    display: block;
 }
 
 
@@ -58,23 +129,22 @@
 
 
 
+
+
+
+.title-2-fonts span{
+    font-size: 20px;
+    /* border: 2px solid black; */
+}
 
 /* Setting font color */
 .slides div h1, .manu a{
     color: #e2574c;
 }
 
-
-
-
-
-
-
-
 .footer{
     background: #242424;
     width: 100%;
-
 }
 
 .fa{
