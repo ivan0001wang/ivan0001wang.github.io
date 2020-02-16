@@ -5,15 +5,15 @@
 }
 @font-face {
     font-family: Playfair-BoldItalic;
-    src: url("Components/fonts/PlayfairDisplay-BoldItalic.otf.otf") format("opentype");
+    src: url("Components/fonts/PlayfairDisplay-BoldItalic.otf") format("opentype");
 }
 @font-face {
     font-family: Playfair-Italic;
-    src: url("Components/fonts/PlayfairDisplay-Italic.otf.otf") format("opentype");
+    src: url("Components/fonts/PlayfairDisplay-Italic.otf") format("opentype");
 }
 @font-face {
     font-family: Playfair-Regular;
-    src: url("Components/fonts/PlayfairDisplay-Regular.otf.") format("opentype");
+    src: url("Components/fonts/PlayfairDisplay-Regular.otf") format("opentype");
 }
 @font-face {
     font-family: Raleway-Light;

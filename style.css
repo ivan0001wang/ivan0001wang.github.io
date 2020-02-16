@@ -1,12 +1,5 @@
-/* .test1{
-    font-family: Raleway-light;
-}
-
-.test2{
-    font-family: Raleway-MediumItalic
-} */
-
 .body{
+    font-size: 14px;
     margin: none;
     color: #2d2d2d;
     font-family: Raleway-Medium;
@@ -121,21 +114,72 @@ End of HERO section
 Start of Intro Section
 */ 
 .intro{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0.6em;
+    /* border: 4px black solid; */
 }
-
-
-
-
-
-
-
-
 
 .title-2-fonts span{
-    font-size: 20px;
-    /* border: 2px solid black; */
+    font-size: 1.2em;
+    /* border: dotted red 3px; */
 }
+
+.title-2-fonts span:nth-of-type(1){
+    font-family: Playfair-Italic;
+}
+
+.title-2-fonts span:nth-of-type(2){
+    font-family: Playfair-Bold;
+}
+
+.intro p{
+    font-family: Raleway-Light;
+}
+/* End of intro section */
+/*  */
+/*  */
+/* Start of Cards section */
+.cards{
+    display: grid;
+    gap: 0.5em;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+}
+
+.cards div{
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.cards h1{
+    position: absolute;
+    z-index: 1;
+    font-family: Raleway-Light;
+    font: 1.5em;
+}
+
+.cards img{
+    width: 100%;
+    filter: brightness(70%);
+}
+
+.mens{
+    grid-row: 1;
+    grid-column: 1/-1;
+    width: inherit;
+}
+
+.womens{
+    grid-row: 4;
+    grid-column: 1/-1;
+}
+
 
 /* Setting font color */
 .slides div h1, .manu a{
@@ -150,3 +194,13 @@ Start of Intro Section
 .fa{
     color: black
 }
+/* End of footer */
+/*  */
+/*  */
+/* Start of RWD config */
+@media only screen and (min-width:600px){
+    body{
+        font-size: 16px;
+    }
+}
+/* THE END! */
