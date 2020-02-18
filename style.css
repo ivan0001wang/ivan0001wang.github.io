@@ -1,15 +1,51 @@
+/* Import fonts from folder Components/fonts/ */
+@font-face {
+    font-family: Playfair-Bold;
+    src: url("Components/fonts/PlayfairDisplay-Bold.otf") format("opentype");
+}
+@font-face {
+    font-family: Playfair-BoldItalic;
+    src: url("Components/fonts/PlayfairDisplay-BoldItalic.otf") format("opentype");
+}
+@font-face {
+    font-family: Playfair-Italic;
+    src: url("Components/fonts/PlayfairDisplay-Italic.otf") format("opentype");
+}
+@font-face {
+    font-family: Playfair-Regular;
+    src: url("Components/fonts/PlayfairDisplay-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: Raleway-Light;
+    src: url("Components/fonts/Raleway-Light.ttf") format("truetype");
+}
+@font-face {
+    font-family: Raleway-LightItalic;
+    src: url("Components/fonts/Raleway-LightItalic.ttf") format("truetype");
+}
+@font-face {
+    font-family: Raleway-Medium;
+    src: url("Components/fonts/Raleway-Medium.ttf") format("truetype");
+}
+@font-face {
+    font-family: Raleway-MediumItalic;
+    src: url("Components/fonts/Raleway-MediumItalic.ttf") format("truetype");
+}
+
 /* Start of global properties */
 *{
     font-family: Raleway-Light;
 }
 
-.body{
+body{
     font-size: 14px;
-    margin: none;
+    margin: 0;
+    padding: 0;
 }
 
 p{
     line-height: 1.6;
+    text-align: center;
 }
 
 .title-2-fonts span{
@@ -32,23 +68,21 @@ p{
     justify-content: space-between;
 }
 
+/* Aloha logo */
 .head img:nth-of-type(1){
     grid-row: 1;
     grid-column: 1;
     width: 10em;
     padding-left: 1em;
-        /* Testing */
-        /* border: 2px black solid; */
 }
 
+/* shopping cart icon */
 .head img:nth-of-type(2){
     grid-row: 1;
     grid-column: 2;
-    width: 4.5em;
+    width: 4em;
+    margin-left: -1em;
     align-self: center;
-    margin-right: -1em;
-        /* Testing */
-        /* border: 2px black solid; */
 }
 
 .head hr{
@@ -56,25 +90,27 @@ p{
     grid-column: 1/3;
     width: 100%;
     margin-top: -.2em;
-        /* Testing */
-        /* border: 2px black solid; */
 }
 
-.head .manu{
+.manu{
+    position: sticky;
+    top: 0;
     display: flex;
     grid-row: 3;
     grid-column: 1/3;
     width: 100%;
-    margin-top: 0.5em;
+    margin-top: 0.5em; 
     justify-content: space-evenly;
-        /* Testing */
-        /* border: 2px black solid; */
+    background: white;
+    z-index: 100;
 }
 
-.head .manu a{
+.manu a{
     color: #e2574c;
     font-size: 1em;
     text-decoration: none;
+    position: sticky;
+    z-index: 3;
 }
 /* End of Head */
 /*  */
@@ -88,57 +124,55 @@ p{
     margin-top: 1em;
     padding: 0;
     overflow: hidden;
-    /* border: 4px green dotted; */
 }
 
 .hero-background{
     position: absolute;
-    filter: brightness(0.7);
+    filter: brightness(0.8);
     width: 100%;
     height: 25em;
 }
 
 .hero-girl{
     position: relative;
-    filter: brightness(0.7);
+    filter: brightness(0.8);
     height: 20em;
     z-index: 1;
     margin: 5em auto 0;
-    /* border: blueviolet 3px dotted; */
 }
 
 .hero h1, .hero h2{
     position: absolute;
     color:white;
     z-index: 2;
+    text-align: center;
 }
 
 .hero h1{
     font-size: 1.2em;
     margin-top: 7em;
-    text-align: center;
-    /* border: 3px dotted black; */
 }
 
 .hero h2{
-    text-align: center;
     font-family: Playfair-Regular;
     font-size: 2.2em;
     margin-top: 5.5em;
-    /* border: 3px dotted black; */
+    max-width: 8em;
 }
-/* 
-End of HERO section
-
-
-Start of Intro Section
-*/ 
+/* End of HERO section */
+/*  */
+/*  */
+/* Start of Intro Section */ 
 .intro{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 1.5em 0.6em;
+}
+
+.intro p{
+    color: #969696;
 }
 /* End of intro section */
 /*  */
@@ -153,7 +187,6 @@ Start of Intro Section
 }
 
 .cards div{
-    height: fit-content;
     display: flex;
     justify-content: center;
     place-items: center;
@@ -173,7 +206,6 @@ Start of Intro Section
 .mens{
     grid-row: 1;
     grid-column: 1/-1;
-    width: inherit;
 }
 
 .womens{
@@ -188,13 +220,9 @@ Start of Intro Section
     display: flex;
     flex-direction: column;
     place-items: center;
+    text-align: center;
     width: 100%;
     margin-top: 1.5em;
-    color: rgb(25, 86, 136);
-}
-
-.slides-item img{
-    width: 100%;
 }
 
 .slides div a{
@@ -215,30 +243,6 @@ Start of Intro Section
 .slides div:not(:nth-of-type(1)){
     display: none;
 }
-
-/* Trying to make a thumbnail button */
-/*.slides-dots{
-    margin-top: 2em;
-    display: flex;
-    width: 55%;
-    justify-content: space-evenly;
-}
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: rgb(218, 203, 203);
-    border-radius: 50%;
-    display: inline-block;
-    z-index: 1000;
-}
-.dot:hover {
-    background-color: #3a3a3a;
-    transition: background-color 0.6s ease;
-} */
-
-
 /* End of Slides section */
 /*  */
 /*  */
@@ -250,7 +254,7 @@ Start of Intro Section
     color: white;
     text-shadow: 0.1em 0.1em 10px grey;
     width: 100%;
-    height: 20em;
+    height: 21em;
     margin: 0px;
     padding: 2em 0;
 }
@@ -280,15 +284,15 @@ Start of Intro Section
 }
 
 .signup-email input{
-    height: 4em;
+    height: 3.5em;
     border: 0;
     border-radius: 30px;
-    width: 85%;
+    width: 25em;
 }
 
 ::placeholder{
     color: #bbbbbb;
-    font-size: 1.4em;
+    font-size: 1em;
 }
 
 .signup-email button{
@@ -299,9 +303,9 @@ Start of Intro Section
     font-size: 0.9em;
     font-family: Raleway-Medium;
     color: white;
-    height: 2.6em;
+    height: 2.4em;
     margin-left: -7.9em;
-    margin-top: 0.2em;
+    margin-top: 0.4em;
     padding:0 1.5em;
 }
 /* End of sign-up section */
@@ -311,7 +315,59 @@ Start of Intro Section
 footer{
     background: #242424;
     width: 100%;
-    margin: 0;
+    height: 19em;
+    clear: both;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: space-evenly;
+    font-size: 0.95em;
+}
+
+.footer-address div{
+    text-align: center;
+    font-family: Playfair-Regular;
+}
+
+.address{
+    color: #969696;
+}
+.footer-address{
+    justify-content: flex-start;
+    text-align: d;
+}
+
+.footer-address a{
+    color: white;
+    font-family: Playfair-Regular;
+}
+
+.footer-media a:link{
+    text-decoration: none;
+}
+
+.footer-media{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    padding: 5em;
+}
+
+.media-logo{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5em;
+}
+
+.media-name{
+    display: none;
+    text-decoration: none;
+}
+
+.media-name a:link{
+
 }
 
 .fa{
@@ -324,6 +380,135 @@ footer{
 @media only screen and (min-width:600px){
     body{
         font-size: 16px;
+    3
+}
+
+@media only screen and (min-width:600px){
+    .signup-email input{
+        width: 35em;
+    }
+    
+    .signup-email button{
+        margin-top: 0.15em;
+    }
+}
+
+@media only screen and (min-width:1240px){
+    /* global config */
+    body{
+        font-size: 24px;
+    }
+    
+    p{
+        max-width: 40em;
+    }
+
+    /* top manu */
+    hr{
+        display: none;
+    }
+
+    .manu{
+        width: 25em;
+        margin: -3em auto 0;
+    }
+
+    /* hero section */
+    .hero{
+        margin-top: 3em;
+    }
+
+    .hero-girl{
+        height: 25em;
+    }
+
+    .hero h1{
+        margin-top: 9em;
+    }
+
+    .hero h2{
+        max-width: 10em;
+        font-size: 2.7em;
+        margin-top: 5em;
+    }
+
+    /* cards section */
+    .cards{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    .mens{
+        grid-row: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    .womens{
+        grid-row: 2;
+        grid-column-start: 3;
+        grid-column-end: 5; 
+    }
+
+    /* slides section */
+    .slides div:nth-of-type(2n+1){
+        display: initial;
+    }
+
+    .slides-list{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .slides-item h1{
+        font-size: 1.1em;
+    }
+
+    /* signup section */
+    .signup-email button{
+        margin-top: 0.15em;
+        height: 1.6em;
+    }
+
+    /* footer */
+    footer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-address{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer-address{
+        padding-left: 4em;
+    }
+
+    .footer-media{
+        flex-direction: row;
+        justify-content: space-between;
+        place-items: flex-start;
+        height: 12em;
+        width: 10em;
+    }
+
+    .media-logo, .media-name{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 100%;
+        padding-right: 1em;
+    }
+
+    .media-logo{
+        align-items: flex-end;
+    }
+
+    .media-name a{
+        color: white;
     }
 }
 /* THE END! */

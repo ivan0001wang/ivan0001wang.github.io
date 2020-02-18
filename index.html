@@ -1,10 +1,10 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aloha Homepage</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
-    <link rel="stylesheet" href="fonts.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
@@ -14,13 +14,14 @@
         <img src="Components/images/aloha-logo.svg" alt="" height="100px" width="100px">
         <img src="Components/images/cart-icon.svg" alt="">
         <hr>
-        <div class="manu">
-            <a href="">ABOUT</a>
-            <a href="">SHOP</a>
-            <a href="">FEATURED</a>
-            <a href="">UPDATES</a>
-        </div>
     </section>
+
+    <div class="manu">
+        <a href="#about">ABOUT</a>
+        <a href="#shop">SHOP</a>
+        <a href="#featured">FEATURED</a>
+        <a href="#updates">UPDATES</a>
+    </div>
     <!-- End -->
 
     <!-- Start of hero image and title-->
@@ -28,7 +29,7 @@
         <img class="hero-background" src="Components/images/flower-bkgd.jpg" alt="">
         <img class="hero-girl" src="Components/images/banner-girl.png" alt="">
         <h1>NEW COLLECTION</h1>
-        <h2>Spring/Summer<br>2016</h2>
+        <h2>Spring/Summer 2016</h2>
     </section>
     <!-- End -->
 
@@ -44,117 +45,110 @@
     <!-- End -->
 
     <!-- Start of cards -->
-    <!-- <section class="cards">
+    <section id="shop" class="cards">
         <div class="mens">
             <h1>MEN'S</h1>
             <img src="./Components/images/mens-category.jpg" alt="">
         </div>
         <div class="trends">
-            <h1>Trends</h1>
+            <h1>TRENDS</h1>
             <img src="./Components/images/trends-category.jpg" alt="">
         </div>
         <div class="glasses">
-            <h1>Glasses</h1>
+            <h1>GLASSES</h1>
             <img src="./Components/images/glasses-category.jpg" alt="">
         </div>
         <div class="sale">
-            <h1>Sale</h1>
+            <h1>SALE</h1>
             <img src="./Components/images/sale-category.jpg" alt="">
         </div>
         <div class="bags">
-            <h1>Bags</h1>
+            <h1>BAGS</h1>
             <img src="./Components/images/bags-category.jpg" alt="">
         </div>
         <div class="womens">
-            <h1>Women's</h1>
+            <h1>WOMEN'S</h1>
             <img src="./Components/images/womens-category.jpg" alt="">
         </div>
-    </section> -->
+    </section>
     <!-- End -->
     
     <!-- Start of slide show section -->
-    <!-- <section class="slides">
+    <section id="featured" class="slides">
         <h1 class="title-2-fonts">
                 <span>Most-Loved</span>
                 <span>Products</span>
         </h1>
-        <div class="slides-item">
-            <img src="Components/images/checked-stretch-dress.jpg" alt="a red one-piece dress with white dots all over it">
-            <span>DRESSES</span>
-            <h1>Checked Stretch Dress</h1>
-            <span>$129.00</span>
-            <a href=""><button>Add to Cart</button></a>
+        <section class="slides-list">
+            <div class="slides-item">
+                <img src="Components/images/checked-stretch-dress.jpg" alt="a red one-piece dress with white dots all over it">
+                <span>DRESSES</span>
+                <h1>Checked Stretch Dress</h1>
+                <span>$129.00</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>
 
-        <div class="slides-item">
-            <img src="Components/images/blue-hipster-backpack.jpg" alt="a steelblue backpack with 2 vertical lether belts">
-            <span>BAGS</span>
-            <h1>Blue Hipster Backpack</h1>
-            <span>$69.00</span>
-            <a href=""><button>Add to Cart</button></a>
-        </div>
+            <div class="slides-item">
+                <img src="Components/images/blue-silk-dress.jpg" alt="a blue one-piece dress with a black belt">
+                <span>DRESSES</span>
+                <h1>Blue Silk Dress</h1>
+                <span>$9.99</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>
 
-        <div class="slides-item">
-            <img src="Components/images/blue-silk-dress.jpg" alt="a blue one-piece dress with a black belt">
-            <span>DRESSES</span>
-            <h1>Blue Silk Dress</h1>
-            <span>$9.99</span>
-            <a href=""><button>Add to Cart</button></a>
-        </div>
+            <div class="slides-item">
+                <img src="Components/images/blue-hipster-backpack.jpg" alt="a steelblue backpack with 2 vertical lether belts">
+                <span>BAGS</span>
+                <h1>Blue Hipster Backpack</h1>
+                <span>$69.00</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>
 
-        <div class="slides-item">
-            <img src="Components/images/cotton-yellow-tshirt.jpg" alt="a yellow tshirt">
-            <span>SHIRTS</span>
-            <h1>Cotton Yellow Tshirt</h1>
-            <span>$99.99</span>
-            <a href=""><button>Add to Cart</button></a>
-        </div>
+            <div class="slides-item">
+                <img src="Components/images/cotton-yellow-tshirt.jpg" alt="a yellow tshirt">
+                <span>SHIRTS</span>
+                <h1>Cotton Yellow Tshirt</h1>
+                <span>$99.99</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>
 
-        <div class="slides-item">
-            <img src="Components/images/demin-overall-shorts.jpg" alt="a pair of blue overall shorts">
-            <span>SHORTS</span>
-            <h1>Demin Overall Shorts</h1>
-            <span>$9.99</span>
-            <a href=""><button>Add to Cart</button></a>
-        </div>
+            <div class="slides-item">
+                <img src="Components/images/demin-overall-shorts.jpg" alt="a pair of blue overall shorts">
+                <span>SHORTS</span>
+                <h1>Demin Overall Shorts</h1>
+                <span>$89.00</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>
 
-        <div class="slides-item">
-            <img src="Components/images/pink-dotted-dress.jpg" alt="a pink one-piece dress with a few black dots here and there">
-            <span>DRESSES</span>
-            <h1>Pink Dotted Dress</h1>
-            <span>$99.99</span>
-            <a href=""><button>Add to Cart</button></a>
-        </div>
+            <div class="slides-item">
+                <img src="Components/images/stretch-knit-dress.jpg" alt="a black one-piece dress with white dots all over it">
+                <span>DRESSES</span>
+                <h1>Stretch Knit Dress</h1>
+                <span>$169.00</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>
 
-        <div class="slides-item">
-            <img src="Components/images/stretch-knit-dress.jpg" alt="a black one-piece dress with white dots all over it">
-            <span>DRESSES</span>
-            <h1>Stretch Knit Dress</h1>
-            <span>$169.00</span>
-            <a href=""><button>Add to Cart</button></a>
-        </div>
+            <div class="slides-item">
+                <img src="Components/images/pink-dotted-dress.jpg" alt="a pink one-piece dress with a few black dots here and there">
+                <span>DRESSES</span>
+                <h1>Pink Dotted Dress</h1>
+                <span>$99.99</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>
 
-        <div class="slides-item">
-            <img src="Components/images/cotton-blue-shirt.jpg" alt="a blue cowboy shirt">
-            <span>SHIRTS</span>
-            <h1>Cotton Blue Shirt</h1>
-            <span>$89.00</span>
-            <a href=""><button>Add to Cart</button></a>
-        </div> -->
-        <!-- <div class="slides-dots">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-            <span class="dot" onclick="currentSlide(5)"></span> 
-            <span class="dot" onclick="currentSlide(6)"></span> 
-            <span class="dot" onclick="currentSlide(7)"></span> 
-            <span class="dot" onclick="currentSlide(8)"></span> 
-        </div> 
-    </section> -->
+            <div class="slides-item">
+                <img src="Components/images/cotton-blue-shirt.jpg" alt="a blue cowboy shirt">
+                <span>SHIRTS</span>
+                <h1>Cotton Blue Shirt</h1>
+                <span>$89.00</span>
+                <a href=""><button>Add to Cart</button></a>
+            </div>     
+        </section>
+    </section>
     <!-- End -->
 
     <!-- Start of sign-up section -->
-        <section class="signup">
+        <section id="updates" class="signup">
             <img src="./Components/images/wave-bkgd-resized.jpg" alt="">
             <h1 class="title-2-fonts">
                 <span>Sign-up for</span>
@@ -169,28 +163,37 @@
     <!-- End -->
 
     <!-- Start of footer -->
-        <footer>
-            <div class="leftCol">
+        <footer id="about">
+            <div class="footer-address">
                 <div>
                     ©2016 Aloha Apparel Co.<br>
                     Powered by HTML and CSS.
                 </div>
                 <div>
-                    604-604-6040. <a href="">info@alohaapparel.com</a>
+                    <br>604-604-6040. <a href="">info@alohaapparel.com</a>
                 </div>
-                <div>
-                    1490 W Broadway <br>
+                <div class="address">
+                    <br>1490 W Broadway <br>
                     Vancouver, BC, Canada
                 </div>
             </div>
-            <div class="rightCol">
-                <a href="#" class="fa fa-facebook">Facebook</a>
-                <a href="#" class="fa fa-twitter">Twitter</a>
-                <a href="#" class="fa fa-instagram">Instagram</a>
-                <a href="#" class="fa fa-pinterest">Pinterest</a>
-                <a href="#" class="fa fa-google-plus">Google+</a>
+            <div class="footer-media">
+                <div class="media-logo">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-pinterest"></a>
+                    <a href="#" class="fa fa-google-plus"></a>
+                </div>
+                <div class="media-name">
+                    <a href=""> Facebook</a>
+                    <a href=""> Twitter</a>
+                    <a href=""> Instagram</a>
+                    <a href=""> Pinterest</a>
+                    <a href=""> Google+</a>
+                </div>
             </div>
         </footer>
-    <!-- THE END! -->
+    <!-- End -->
 </body>
 </html>
